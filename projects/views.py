@@ -6,4 +6,4 @@ from projects.models import Project
 def ProjectListView(request):
     projects = Project.objects.filter()
     context = {"projects": projects}
-    return render(request, "projects/product_list.html", context)
+    return render(request, "projects/project_list.html", context)
