@@ -1,4 +1,4 @@
 from django.urls import path
-from projects.views import ProjectListView
+from projects.views import project_list
 
-urlpatterns = [path("", ProjectListView, name="list_projects")]
+urlpatterns = [path("", project_list, name="list_projects")]
